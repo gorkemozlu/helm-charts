@@ -20,7 +20,7 @@ spec:
       labels:
         {{- include "petclinic.selectorLabels" . | nindent 8 }}
         app: petclinic
-        version: {{ .Values.petv1.image.tag }}
+        version: {{ .Values.petv2.image.tag }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
